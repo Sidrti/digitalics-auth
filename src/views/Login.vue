@@ -1,27 +1,69 @@
 <template>
-  <div class="main-container">
-    <form @submit="onSubmit"> 
-      <div class="box-container">
-        <h2 class="heading">Sign In</h2>
-        <div class="form-fields">
-          <input id="email" name="email" type="text" placeholder="Email Address" v-model="form.email">
-        </div>
-        <div class="form-fields">
-          <input id="password" name="password" type="text" placeholder="Password" v-model="form.password">
-        </div>
-        <div class="form-fields">
-          <button class="signIn" name="commit" type="submit">
-            Sign In
-          </button>
-        </div>
-        <div class="login-choice"><span>or Sign In with</span></div>
-        <SocialLogin @onSuccess="onSuccess" @onFailure="onFailure"/>
+  <section class="section section-shaped section-lg my-0">
+      <div class="shape shape-style-1 bg-gradient-default">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
       </div>
-    </form>
-    <div class="footer">
-       <p>Don't have an account? <a href="/signup"> Create one now</a></p>
-    </div>
-  </div>
+      <div class="container pt-lg-md">
+          <div class="row justify-content-center">
+              <div class="col-lg-5">
+                  <card type="secondary" shadow
+                        header-classes="bg-white pb-5"
+                        body-classes="px-lg-5 py-lg-5"
+                        class="border-0">
+                      <template>
+                          <div class="text-muted text-center mb-3">
+                              <small>Sign in with</small>
+                          </div>
+                          <div class="btn-wrapper text-center">
+                            <SocialLogin @onSuccess="onSuccess" @onFailure="onFailure"/>
+                          </div>
+                      </template>
+                      <template>
+                          <div class="text-center text-muted mb-4">
+                              <small>Or sign in with credentials</small>
+                          </div>
+                          <form role="form">
+                              <base-input alternative
+                                          class="mb-3"
+                                          placeholder="Email"
+                                          addon-left-icon="ni ni-email-83"
+                                          v-model="form.email">
+                              </base-input>
+                              <base-input alternative
+                                          type="password"
+                                          placeholder="Password"
+                                          addon-left-icon="ni ni-lock-circle-open"
+                                          v-model="form.password">
+                              </base-input>
+                              <div class="text-center">
+                                  <base-button class="my-4" type="primary" @click="onSubmit">Sign In</base-button>
+                              </div>
+                          </form>
+                      </template>
+                  </card>
+                  <div class="row mt-3">
+                      <div class="col-6">
+                          <!-- <a href="#" class="text-light">
+                              <small>Forgot password?</small>
+                          </a> -->
+                      </div>
+                      <div class="col-6 text-right">
+                          <a href="/signup" class="text-light">
+                              <small>Create new account</small>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 </template>
 
 <script>
@@ -63,8 +105,8 @@ export default {
     onFailure(error) {
 
     },
-    async onSubmit(evt) {
-      evt.preventDefault();
+    async onSubmit() {
+      // evt.preventDefault();
       const data = { email:this.form.email, password:this.form.password };
       getLogin(data).then(res => {
         console.log("errors",res);
