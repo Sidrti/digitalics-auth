@@ -3,35 +3,55 @@ import Router from 'vue-router'
 import Home from '@/views/Home'
 import Login from '@/views/Login'
 import SignUp from '@/views/SignUp'
+import AppHeader from "../layout/AppHeader";
+import AppFooter from "../layout/AppFooter";
 import PageNotFound from '@/components/PageNotFound'
+import Landing from '@/views/Landing'
 
 Vue.use(Router)
 
 let baseRoutes = [
   {
     path: '/',
-    redirect: '/login'
+    name: '',
+    components: {
+      header: AppHeader,
+      default: Landing,
+      footer: AppFooter
+    }
   },
   {
     path: '/home',
     name: 'Home',
-    component: Home
+    components: {
+      header: AppHeader,
+      default: Home,
+      footer: AppFooter
+    }
   },
   {
     path: '/login',
     name: 'Login',
-    component: Login
+    components: {
+      header: AppHeader,
+      default: Login,
+      footer: AppFooter
+    }
   },
   {
     path: '/signup',
     name: 'SignUp',
-    component: SignUp
+    components: {
+      header: AppHeader,
+      default: SignUp,
+      footer: AppFooter
+    }
   },
   {
     path: '*',
     name: 'PageNotFound',
     component: PageNotFound
-  }
+  },
 ]
 
 const router = new Router({
@@ -43,7 +63,7 @@ const router = new Router({
 
 router.beforeEach((to, from, next) => {
   // redirect to login page if not logged in and trying to access a restricted page
-  const publicPages = ['/login', '/signup']
+  const publicPages = ['/login', '/signup','/']
   const authRequired = !publicPages.includes(to.path)
   const loggedIn = localStorage.getItem('user')
   if (authRequired && !loggedIn) {
