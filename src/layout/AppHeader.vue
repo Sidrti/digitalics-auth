@@ -58,15 +58,24 @@
                     <router-link to="/register" class="dropdown-item">Register</router-link>
                 </base-dropdown>
             </ul> -->
-            <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+            <ul v-if="!user" class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item d-none d-lg-block ml-lg-4">
-                    <a href="/login" target="_blank" rel="noopener"
-                       class="btn btn-neutral btn-icon">
-                <span class="btn-inner--icon">
-                  <i class="fa fa-cloud-download mr-2"></i>
-                </span>
+                    <router-link to="/login" class="btn btn-neutral btn-icon">
+                        <span class="btn-inner--icon">
+                            <i class="fa fa-cloud-download mr-2"></i>
+                        </span>
                         <span class="nav-link-inner--text">Login</span>
-                    </a>
+                    </router-link>
+                </li>
+            </ul>
+            <ul v-else class="navbar-nav align-items-lg-center ml-lg-auto">
+                <li class="nav-item d-none d-lg-block ml-lg-4">
+                    <router-link to="/home" class="btn btn-neutral btn-icon">
+                        <span class="btn-inner--icon">
+                            <i class="fa fa-cloud-download mr-2"></i>
+                        </span>
+                        <span class="nav-link-inner--text">Home</span>
+                    </router-link>
                 </li>
             </ul>
         </base-nav>
@@ -78,12 +87,18 @@ import BaseDropdown from "@/components/BaseDropdown";
 import CloseButton from "@/components/CloseButton";
 
 export default {
-  components: {
-    BaseNav,
-    CloseButton,
-    BaseDropdown
-  }
+    components: {
+        BaseNav,
+        CloseButton,
+        BaseDropdown
+    },
+    computed: {
+        user() {
+            return localStorage.getItem('user');
+        }
+    }
 };
 </script>
 <style>
+
 </style>

@@ -1,5 +1,5 @@
 // export const API_URL = "http://localhost:8000/api";
-export const API_URL = "http://api.digitalicsinnovation.com/public/api";
+export const API_URL = "https://api.digitalicsinnovation.com/public/api";
 
 /**
  * Set localStorage
