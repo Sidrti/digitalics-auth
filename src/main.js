@@ -3,7 +3,6 @@ import App from './App.vue'
 import router from './router/router'
 import store from './store/store'
 import Argon from "./plugins/argon-kit";
-
 import './registerServiceWorker'
 
 import GoogleAuth from '@/config/google_oAuth.js'
@@ -13,9 +12,10 @@ const gauthOption = {
   prompt: 'select_account',
   plugin_name:'digitalics-login'
 }
-Vue.use(Argon);
+Vue.use(Argon)
 Vue.use(GoogleAuth, gauthOption)
 Vue.config.productionTip = false
+
 
 new Vue({
   router,
