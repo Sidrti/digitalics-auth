@@ -1,488 +1,711 @@
 <template>
     <div>
+        <section class="w3l-banner py-5" id="work">
+            <div class="midd-w3 py-lg-4 py-md-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mt-lg-0 mt-lg-5 about-right-faq align-self">
+                            <h5 class="title-small mb-2">Use AI to personalize your pitch</h5>
+                            <h3 class="title-banner">The All-In-One <span>LinkedIn</span>Automation Tool</h3>
+                            <p class="mt-4">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                                ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Non quae, ad.</p>
+                                <a href="#btn" class="btn btn-style btn-primary mt-md-5 mt-4">Free Trial</a>
+                        </div>
+                        <div class="col-md-6 left-wthree-img mt-lg-0 mt-4">
+                            <div class="position-relative">
+                                <img src="../assets/images/bannerimg.jpg" alt="" class="img-fluid">
+                                <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center position-absolute">
+                                    <span class="video-play-icon">
+                                        <span class="fa fa-play"></span>
+                                    </span>
+                                </a>
+                                <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                                    <iframe src="https://www.youtube.com/embed/2jI6fHBtRJU" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="position-relative">
-            <!-- shape Hero -->
-            <section class="section-shaped my-0">
-                <div class="shape shape-style-1 shape-default shape-skew">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="container shape-container d-flex">
-                    <div class="col px-0">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h1 class="display-3  text-white">Automating your campaigns 
-                                    <span>has never been faster</span>
-                                </h1>
-                                <p class="lead  text-white">Become a lead master generation su LinkedIn
-                                                        DIGITALCS is the platform that allows you to create easily
-                                                        your campaigns to acquire new prospects
-</p>
-                                <div class="btn-wrapper">
-                                    <base-button tag="a"
-                                                 href="#"
-                                                 class="mb-3 mb-sm-0"
-                                                 type="white"
-                                                 icon="ni ni-cloud-download-95">
-                                        Get Start
-                                    </base-button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- 1st Hero Variation -->
-        </div>
-        <section class="section section-lg pt-lg-0 mt--200">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="row row-grid">
-                            <div class="col-lg-4">
-                                <card class="border-0" hover shadow body-classes="py-5">
-                                    <icon name="ni ni-check-bold" type="primary" rounded class="mb-4">
-                                    </icon>
-                                    <h6 class="text-primary text-uppercase">Automated system</h6>
-                                    <!-- <p class="description mt-3">Argon is a great free UI package based on Bootstrap 4
-                                        that includes the most important components and features.</p> -->
-                                    <div>
-                                        <badge type="primary" rounded>design</badge>
-                                        <badge type="primary" rounded>system</badge>
-                                        <badge type="primary" rounded>creative</badge>
-                                    </div>
-                                    <base-button tag="a" href="#" type="primary" class="mt-4">
-                                        Learn more
-                                    </base-button>
-                                </card>
-                            </div>
-                            <div class="col-lg-4">
-                                <card class="border-0" hover shadow body-classes="py-5">
-                                    <icon name="ni ni-istanbul" type="success" rounded class="mb-4">
-                                    </icon>
-                                    <h6 class="text-success text-uppercase">Build Something</h6>
-                                    <!-- <p class="description mt-3">Argon is a great free UI package based on Bootstrap
-                                        4 that includes the most important components and features.</p> -->
-                                    <div>
-                                        <badge type="success" rounded>business</badge>
-                                        <badge type="success" rounded>vision</badge>
-                                        <badge type="success" rounded>success</badge>
-                                    </div>
-                                    <base-button tag="a" href="#" type="success" class="mt-4">
-                                        Learn more
-                                    </base-button>
-                                </card>
-                            </div>
-                            <div class="col-lg-4">
-                                <card class="border-0" hover shadow body-classes="py-5">
-                                    <icon name="ni ni-planet" type="warning" rounded class="mb-4">
-                                    </icon>
-                                    <h6 class="text-warning text-uppercase">Prepare Launch</h6>
-                                    <!-- <p class="description mt-3">Argon is a great free UI package based on Bootstrap
-                                        4 that includes the most important components and features.</p> -->
-                                    <div>
-                                        <badge type="warning" rounded>marketing</badge>
-                                        <badge type="warning" rounded>product</badge>
-                                        <badge type="warning" rounded>launch</badge>
-                                    </div>
-                                    <base-button tag="a" href="#" type="warning" class="mt-4">
-                                        Learn more
-                                    </base-button>
-                                </card>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section-lg">
-            <div class="container">
-                <div class="row row-grid align-items-center">
-                    <div class="col-md-6 order-md-2">
-                        <img src="img/theme/promo-1.png" class="img-fluid floating">
-                    </div>
-                    <div class="col-md-6 order-md-1">
-                        <div class="pr-md-5">
-                            <icon name="ni ni-settings-gear-65" class="mb-5" size="lg" type="success" shadow
-                                  rounded></icon>
-                            <h3>Awesome features</h3>
-                            <p>Reach your prospects with targeted actions Acquiring new leads manually can take a lot of time and technical skill.
-With DIGITALICS you can launch your campaigns in minutes, obtaining high-level information, optimizing your sales strategy on LinkedIn.
-</p>
-                            <ul class="list-unstyled mt-5">
-                                <li class="py-2">
-                                    <div class="d-flex align-items-center">
-                                        <badge type="success" circle class="mr-3" icon="ni ni-settings-gear-65"></badge>
-                                        <h6 class="mb-0">reach your prospect in a  minute</h6>
-                                    </div>
-                                </li>
-                                <li class="py-2">
-                                    <div class="d-flex align-items-center">
-                                        <badge type="success" circle class="mr-3" icon="ni ni-html5"></badge>
-                                        <h6 class="mb-0">Automate your procedure</h6>
-                                    </div>
-                                </li>
-                                <li class="py-2">
-                                    <div class="d-flex align-items-center">
-                                        <badge type="success" circle class="mr-3" icon="ni ni-satisfied"></badge>
-                                        <h6 class="mb-0">Aquire more leads</h6>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section bg-secondary">
-            <div class="container">
-                <div class="row row-grid align-items-center">
-                    <div class="col-md-6">
-                        <div class="card bg-default shadow border-0">
-                            <img v-lazy="'img/theme/promo-1.png'" class="card-img-top">
-                            <blockquote class="card-blockquote">
-                                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
-                                     class="svg-bg">
-                                    <polygon points="0,52 583,95 0,95" class="fill-default"></polygon>
-                                    <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default"></polygon>
-                                </svg>
-                                <h4 class="display-3 font-weight-bold text-white">Advance System</h4>
-                                <p class="lead text-italic text-white">The best and simplified solution is waiting for you.</p>
-                            </blockquote>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="pl-md-5">
-                            <icon name="ni ni-settings" class="mb-5" size="lg" type="warning" shadow rounded></icon>
-
-                            <h3>DIGITALICS is fast and intuitive to support you in creating your campaigns lead acquisition</h3>
-                            <p class="lead">In a few steps and through simple sequences of actions, you will become proficient in creating winning strategies. Digitalics is your best tool to automatically generate new leads. </p>
-                            <p>In a few steps and through simple sequences of actions, you will become proficient in creating winning strategies. Digitalics is your best tool to automatically generate new leads.</p>
-                            <p>In a few steps and through simple sequences of actions, you will become proficient in creating winning strategies. Digitalics is your best tool to automatically generate new leads.</p>
-                            <a href="#" class="font-weight-bold text-warning mt-5">Try it now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section section-shaped my-0 overflow-hidden">
-            <div class="shape shape-style-1 bg-gradient-warning shape-skew">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="container py-0">
-                <div class="row row-grid align-items-center">
-                    <div class="col-md-6 order-lg-2 ml-lg-auto">
-                        <div class="position-relative pl-md-5">
-                            <img src="img/ill/ill-2.svg" class="img-center img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="d-flex px-3">
-                            <div>
-                                <icon name="ni ni-building" size="lg" class="bg-gradient-white" color="primary" shadow
-                                      rounded></icon>
-                            </div>
-                            <div class="pl-4">
-                                <h4 class="display-3 text-white">Modern Interface</h4>
-                                <p class="text-white">The Arctic Ocean freezes every winter and much of the sea-ice then
-                                    thaws every summer, and that process will continue whatever happens.</p>
-                            </div>
-                        </div>
-                        <card shadow class="shadow-lg--hover mt-5">
-                            <div class="d-flex px-3">
-                                <div>
-                                    <icon name="ni ni-satisfied" gradient="success" color="white" shadow
-                                          rounded></icon>
-                                </div>
-                                <div class="pl-4">
-                                    <h5 class="title text-success">Why do lead generation on LinkedIn?</h5>
-                                    <p>The social network is designed to connect with the people and issues that matter in your professional world. It has over 750 million business-related users, with more than 260 million monthly active users. Furthermore, our is targeting target very easy, thanks to the information specific to the market in which they operate inserted by the users themselves in their profiles. </p>
-                                    <a href="#" class="text-success">Learn more</a>
-                                </div>
-                            </div>
-                        </card>
-                        <card shadow class="shadow-lg--hover mt-5">
-                            <div class="d-flex px-3">
-                                <div>
-                                    <icon name="ni ni-active-40" gradient="warning" color="white" shadow
-                                          rounded></icon>
-                                </div>
-                                <div class="pl-4">
-                                    <h5 class="title text-warning">How can I use Digitalics safely?</h5>
-                                    <p>To access RAYZO you will need to login to your LinkedIn profile and access the tool using the profile itself, a process that guarantees you more security
-for your profile information. </p>
-                                    <a href="#" class="text-warning">Learn more</a>
-                                </div>
-                            </div>
-                        </card>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <section class="section section-lg">
-            <div class="container">
-                <div class="row justify-content-center text-center mb-lg">
-                    <div class="col-lg-8">
-                        <h2 class="display-3">The amazing Team</h2>
-                        <p class="lead text-muted">According to the National Oceanic and Atmospheric Administration,
-                            Ted, Scambos, NSIDClead scentist, puts the potentially record maximum.</p>
-                    </div>
-                </div>
+        <!-- logos Section -->
+        <section class="w3l-logos py-5">
+            <div class="container py-lg-3">
+                <!-- <h5 class="title-small mb-1 text-center">Technical Conference.</h5>
+                <h3 class="title-big mb-md-5 mb-4 text-center">Partners and Sponsers</h3> -->
                 <div class="row">
-                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="px-4">
-                            <img v-lazy="'img/theme/team-1-800x800.jpg'"
-                                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                 style="width: 200px;">
-                            <div class="pt-4 text-center">
-                                <h5 class="title">
-                                    <span class="d-block mb-1">Ryan Tompson</span>
-                                    <small class="h6 text-muted">Web Developer</small>
-                                </h5>
-                                <div class="mt-3">
-                                    <base-button tag="a" href="#" type="warning" icon="fa fa-twitter" rounded
-                                                 icon-only></base-button>
-                                    <base-button tag="a" href="#" type="warning" icon="fa fa-facebook" rounded
-                                                 icon-only></base-button>
-                                    <base-button tag="a" href="#" type="warning" icon="fa fa-dribbble" rounded
-                                                 icon-only></base-button>
-                                </div>
+                    <div class="col-lg-12 mx-auto">
+                        <div class="owl-logos owl-carousel owl-theme logo-view">
+                            <div class="item">
+                                <img src="../assets/images/logo1.png" alt="company-logo radius-image" class="img-fluid">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="px-4">
-                            <img v-lazy="'img/theme/team-2-800x800.jpg'"
-                                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                 style="width: 200px;">
-                            <div class="pt-4 text-center">
-                                <h5 class="title">
-                                    <span class="d-block mb-1">Romina Hadid</span>
-                                    <small class="h6 text-muted">Marketing Strategist</small>
-                                </h5>
-                                <div class="mt-3">
-                                    <base-button tag="a" href="#" type="primary" icon="fa fa-twitter" rounded
-                                                 icon-only></base-button>
-                                    <base-button tag="a" href="#" type="primary" icon="fa fa-facebook" rounded
-                                                 icon-only></base-button>
-                                    <base-button tag="a" href="#" type="primary" icon="fa fa-dribbble" rounded
-                                                 icon-only></base-button>
-                                </div>
+                            <div class="item">
+                                <img src="../assets/images/logo2.png" alt="company-logo radius-image" class="img-fluid">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="px-4">
-                            <img v-lazy="'img/theme/team-3-800x800.jpg'"
-                                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                 style="width: 200px;">
-                            <div class="pt-4 text-center">
-                                <h5 class="title">
-                                    <span class="d-block mb-1">Alexander Smith</span>
-                                    <small class="h6 text-muted">UI/UX Designer</small>
-                                </h5>
-                                <div class="mt-3">
-                                    <base-button tag="a" href="#" type="info" icon="fa fa-twitter" rounded
-                                                 icon-only></base-button>
-                                    <base-button tag="a" href="#" type="info" icon="fa fa-facebook" rounded
-                                                 icon-only></base-button>
-                                    <base-button tag="a" href="#" type="info" icon="fa fa-dribbble" rounded
-                                                 icon-only></base-button>
-                                </div>
+                            <div class="item">
+                                <img src="../assets/images/logo3.png" alt="company-logo radius-image" class="img-fluid">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="px-4">
-                            <img v-lazy="'img/theme/team-4-800x800.jpg'"
-                                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                 style="width: 200px;">
-                            <div class="pt-4 text-center">
-                                <h5 class="title">
-                                    <span class="d-block mb-1">John Doe</span>
-                                    <small class="h6 text-muted">Founder and CEO</small>
-                                </h5>
-                                <div class="mt-3">
-                                    <base-button tag="a" href="#" type="success" icon="fa fa-twitter" rounded
-                                                 icon-only></base-button>
-                                    <base-button tag="a" href="#" type="success" icon="fa fa-facebook" rounded
-                                                 icon-only></base-button>
-                                    <base-button tag="a" href="#" type="success" icon="fa fa-dribbble" rounded
-                                                 icon-only></base-button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- <section class="section section-lg pt-0">
-            <div class="container">
-                <card gradient="warning"
-                      no-body
-                      shadow-size="lg"
-                      class="border-0">
-                    <div class="p-5">
-                        <div class="row align-items-center">
-                            <div class="col-lg-8">
-                                <h3 class="text-white">We made website building easier for you.</h3>
-                                <p class="lead text-white mt-3">I will be the leader of a company that ends up being
-                                    worth billions of dollars, because I got the answers. I understand culture.</p>
-                            </div>
-                            <div class="col-lg-3 ml-lg-auto">
-                                <base-button tag="a" href="https://www.creative-tim.com/product/vue-argon-design-system"
-                                             type="white" block size="lg">
-                                    Download Vue
-                                </base-button>
-                            </div>
-                        </div>
-                    </div>
-                </card>
-            </div>
-        </section> -->
-        <section class="section section-shaped my-0 overflow-hidden">
-            <div class="shape shape-style-3 bg-gradient-default shape-skew">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="container pt-lg pb-300">
-                <div class="row text-center justify-content-center">
-                    <div class="col-lg-10">
-                        <h2 class="display-3 text-white">Build something</h2>
-                        <p class="lead text-white">Digitalics Innovative Solution, make your way unique and glorifying</p>
-                    </div>
-                </div>
-                <div class="row row-grid mt-5">
-                    <div class="col-lg-4">
-                        <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
-                        <h5 class="text-white mt-3">Result monitoring dashboard</h5>
-                        <p class="text-white mt-3">Digitalics intuitively collects and displays data on the actions carried out, providing you with a detailed report on the performance of your campaigns.  </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon>
-                        <h5 class="text-white mt-3">Grow your market</h5>
-                        <p class="text-white mt-3">Import your prospects directly from LinkedIn search.
- Create your lists based on the characteristics of the targets and manage them with RAYZO.
- Knowing and differentiating profiles is the tactic to become a lead generation master. </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
-                        <h5 class="text-white mt-3">Launch acquisition campaigns</h5>
-                        <p class="text-white mt-3">Analyze and create your personalized campaigns.  Experiment with new sequences and master new skills, drawing inspiration from the data collected.  Build personalized messages, for a direct and human approach to your prospects. </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section-lg pt-lg-0 section-contact-us">
-            <div class="container">
-                <div class="row justify-content-center mt--300">
-                    <div class="col-lg-8">
-                        <card gradient="secondary" shadow body-classes="p-lg-5">
-                            <h4 class="mb-1">Want to work with us?</h4>
-                            <p class="mt-0">Your project is very important to us.</p>
-                            <base-input class="mt-5"
-                                        alternative
-                                        placeholder="Your name"
-                                        addon-left-icon="ni ni-user-run">
-                            </base-input>
-                            <base-input alternative
-                                        placeholder="Email address"
-                                        addon-left-icon="ni ni-email-83">
-                            </base-input>
-                            <base-input class="mb-4">
-                                    <textarea class="form-control form-control-alternative" name="name" rows="4"
-                                              cols="80" placeholder="Type a message..."></textarea>
-                            </base-input>
-                            <base-button type="default" round block size="lg">
-                                Send Message
-                            </base-button>
-                        </card>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <section class="section section-lg">
-            <div class="container">
-                <div class="row row-grid justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="display-3">Do you love this awesome
-                            <span class="text-success">Design System for Bootstrap 4?</span>
-                        </h2>
-                        <p class="lead">Cause if you do, it can be yours for FREE. Hit the button below to navigate to
-                            Creative Tim where you can find the Design System in HTML. Start a new project or give an
-                            old Bootstrap project a new look!</p>
-                        <div class="btn-wrapper">
-                            <a href="https://www.creative-tim.com/product/vue-argon-design-system"
-                               class="btn btn-primary mb-3 mb-sm-0">Download Vue</a>
-                        </div>
-                        <div class="text-center">
-                            <h4 class="display-4 mb-5 mt-5">Available on these technologies</h4>
-                            <div class="row justify-content-center">
-                                <div class="col-lg-2 col-4">
-                                    <a href="https://getbootstrap.com/" target="_blank" data-toggle="tooltip"
-                                       data-original-title="Bootstrap 4 - Most popular front-end component library">
-                                        <img v-lazy="'https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/bootstrap.jpg'"
-                                             class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-4">
-                                    <a href="https://www.sketchapp.com/" target="_blank" data-toggle="tooltip"
-                                       data-original-title="[Coming Soon] Sketch - Digital design toolkit">
-                                        <img v-lazy="'https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/sketch.jpg'"
-                                             class="img-fluid opacity-5">
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-4">
-                                    <a href="https://www.adobe.com/products/photoshop.html" data-toggle="tooltip"
-                                       data-original-title="[Coming Soon] Adobe Photoshop - Software for digital images manipulation">
-                                        <img v-lazy="'https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/ps.jpg'"
-                                             class="img-fluid  opacity-5">
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-4">
-                                    <a href="https://vuejs.org/" target="_blank" data-toggle="tooltip"
-                                       data-original-title="Vue.js - The progressive javascript framework">
-                                        <img v-lazy="'https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/vue.jpg'"
-                                             class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-4">
-                                    <a href="https://angularjs.org/" target="_blank" data-toggle="tooltip"
-                                       data-original-title="[Coming Soon] Angular - One framework. Mobile &amp; desktop">
-                                        <img v-lazy="'https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/angular.jpg'"
-                                             class="img-fluid opacity-5">
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-4">
-                                    <a href="https://reactjs.org/" target="_blank" data-toggle="tooltip"
-                                       data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces">
-                                        <img v-lazy="'https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/react.jpg'"
-                                             class="img-fluid opacity-5">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+                            <div class="item">
+                                <img src="../assets/images/logo4.png" alt="company-logo radius-image" class="img-fluid">
 
+                            </div>
+                            <div class="item">
+                                <img src="../assets/images/logo5.png" alt="company-logo radius-image" class="img-fluid">
+
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/logo6.png" alt="company-logo radius-image" class="img-fluid">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //logos Section -->
+
+
+        <!-- middle grid -->
+        <section class="w3l-homeblock5 py-5">
+                <h4 class="title-big text-center">Meet Linkedin plugin, the AI that helps you connect with anyone.</h4>
+                <hr style="margin: 24px auto;width: 150px;background: #4c77e0;">
+                <h5 class="title-small mb-1 text-center">Linkedin Plugin gives your team DISC personality insights for every prospect and customer. </h5>
+            <div class="container py-lg-5 py-4">
+                <div class="row">
+                    <div class="col-lg-6 mt-lg-0 mt-4">
+                        <img src="../assets/images/stats.jpg" class="img-fluid radius-image" alt="">
+                    </div>
+                    <div class="col-lg-6 align-self">
+                        <h3 class="title-big mb-4"> Don’t miss out on the fun and join the community! </h3>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores ipsum quos
+                            voluptate, cumque perspiciatis dolorem tempora fugit facere ducimus?.</p>
+                        <div class="row mt-sm-4 mt-2 px-3">
+                            <div class="col-6 p-0">
+                                <span>80+</span>
+                                <h4>Speakers</h4>
+                            </div>
+                            <div class="col-6 p-0">
+                                <span>50+</span>
+                                <h4>Workshops</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //middle grid -->
+        <!-- middle grid -->
+        <section class="w3l-homeblock5 py-5">
+            <div class="container py-lg-5 py-4">
+                <div class="row">
+                    <div class="col-lg-6 align-self">
+                        <h3 class="title-big mb-4"> Don’t miss out on the fun and join the community! </h3>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores ipsum quos
+                            voluptate, cumque perspiciatis dolorem tempora fugit facere ducimus?.</p>
+                        <div class="row mt-sm-4 mt-2 px-3">
+                            <div class="col-6 p-0">
+                                <span>80+</span>
+                                <h4>Speakers</h4>
+                            </div>
+                            <div class="col-6 p-0">
+                                <span>50+</span>
+                                <h4>Workshops</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-4">
+                        <img src="../assets/images/stats.jpg" class="img-fluid radius-image" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //middle grid -->
+        <!-- middle grid -->
+        <section class="w3l-homeblock5 py-5">
+            <div class="container py-lg-5 py-4">
+                <div class="row">
+                    <div class="col-lg-6 mt-lg-0 mt-4">
+                        <img src="../assets/images/stats.jpg" class="img-fluid radius-image" alt="">
+                    </div>
+                    <div class="col-lg-6 align-self">
+                        <h3 class="title-big mb-4"> Don’t miss out on the fun and join the community! </h3>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores ipsum quos
+                            voluptate, cumque perspiciatis dolorem tempora fugit facere ducimus?.</p>
+                        <div class="row mt-sm-4 mt-2 px-3">
+                            <div class="col-6 p-0">
+                                <span>80+</span>
+                                <h4>Speakers</h4>
+                            </div>
+                            <div class="col-6 p-0">
+                                <span>50+</span>
+                                <h4>Workshops</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //middle grid -->
+
+        <!-- middle grid -->
+        <section class="w3l-homeblock5 py-5">
+            <div class="container py-lg-5 py-4">
+                <div class="row">
+                    <div class="col-lg-6 align-self">
+                        <h3 class="title-big mb-4"> Don’t miss out on the fun and join the community! </h3>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores ipsum quos
+                            voluptate, cumque perspiciatis dolorem tempora fugit facere ducimus?.</p>
+                        <div class="row mt-sm-4 mt-2 px-3">
+                            <div class="col-6 p-0">
+                                <span>80+</span>
+                                <h4>Speakers</h4>
+                            </div>
+                            <div class="col-6 p-0">
+                                <span>50+</span>
+                                <h4>Workshops</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-4">
+                        <img src="../assets/images/stats.jpg" class="img-fluid radius-image" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //middle grid -->
+
+        <!-- How it works -->
+        <section class="w3l-homeblock3 py-5">
+            <div class="container py-lg-5 py-md-4">
+                <h3 class="title-big text-center">How it works</h3>
+                <p class="mb-5 text-center">Find out how Linkedin Plugin makes LinkedIn automation sooo easy! </p>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="area-box">
+                            <span class="fa fa-bullseye"></span>
+                            <h4><a href="#feature" class="title-head">Find Your Target Audience</a></h4>
+                            <p>Look for your target audience on LinkedIn by filtering profiles in the LinkedIn Search or prepare a CSV file with LinkedIn profile URLs</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mt-sm-0 mt-5">
+                        <div class="area-box">
+                            <span class="fa fa-bullhorn"></span>
+                            <h4><a href="#feature" class="title-head">Add Leads to Campaign</a></h4>
+                            <p>Add these leads to your "connecting", "messaging", "visiting" or "endorsing" campaigns depending on what action you would like to perform with these leads. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mt-lg-0 mt-5">
+                        <div class="area-box">
+                            <span class="fa fa-rocket"></span>
+                            <h4><a href="#feature" class="title-head">Launch Your Campaign</a></h4>
+                            <p>Now launch the campaign to start performing automated actions with these leads. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How it works -->
+
+        <!-- Request a demo -->
+
+        <div class="center-float">
+        <a class="btn btn-primary" style="border-radius: 20px;" href="">REQUEST A DEMO</a>
+        </div>
+
+        <!-- Request a demo  -->
+
+
+        <!--/testimonials-->
+        <section class="w3l-clients pb-3" id="clients">
+            <!-- /grids -->
+            <div class="cusrtomer-layout py-5">
+                <div class="container py-lg-5 py-md-4">
+                    <div class="heading text-center mx-auto">
+                        <h5 class="title-small text-center">Our Testimonials</h5>
+                        <h3 class="title-big mb-5">What people are saying </h3>
+                    </div>
+                    <!-- /grids -->
+                    <div class="testimonial-width">
+                        <div id="owl-demo1" class="owl-carousel owl-theme mb-4">
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <div class="testi-des">
+                                            <div class="test-img"><img src="../assets/images/team1.jpg" class="img-fluid" alt="/">
+                                            </div>
+                                            <div class="peopl align-self">
+                                                <h3>Johnson smith</h3>
+                                                <p class="indentity">Seattle, Washington</p>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <q>Lorem ipsum dolor sit amet init et consectetur adipisicing elit. Velit beatae laudantium
+                                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.</q>
+                                        </blockquote>
+                                        <ul class="rating-star mt-4">
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star-o"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <div class="testi-des">
+                                            <div class="test-img"><img src="../assets/images/team2.jpg" class="img-fluid" alt="/">
+                                            </div>
+                                            <div class="peopl align-self">
+                                                <h3>Alexander leo</h3>
+                                                <p class="indentity">Seattle, Washington</p>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <q>Lorem ipsum dolor sit amet init et consectetur adipisicing elit. Velit beatae laudantium
+                                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.</q>
+                                        </blockquote>
+                                        <ul class="rating-star mt-4">
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star-o"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <div class="testi-des">
+                                            <div class="test-img"><img src="../assets/images/team3.jpg" class="img-fluid" alt="/">
+                                            </div>
+                                            <div class="peopl align-self">
+                                                <h3>Roy Linderson</h3>
+                                                <p class="indentity">Seattle, Washington</p>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <q>Lorem ipsum dolor sit amet init et consectetur adipisicing elit. Velit beatae laudantium
+                                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.</q>
+                                        </blockquote>
+                                        <ul class="rating-star mt-4">
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star-o"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <div class="testi-des">
+                                            <div class="test-img"><img src="../assets/images/team4.jpg" class="img-fluid" alt="/">
+                                            </div>
+                                            <div class="peopl align-self">
+                                                <h3>Mike Thyson</h3>
+                                                <p class="indentity">Seattle, Washington</p>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <q>Lorem ipsum dolor sit amet init et consectetur adipisicing elit. Velit beatae laudantium
+                                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.</q>
+                                        </blockquote>
+                                        <ul class="rating-star mt-4">
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star-o"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <div class="testi-des">
+                                            <div class="test-img"><img src="../assets/images/team2.jpg" class="img-fluid" alt="/">
+                                            </div>
+                                            <div class="peopl align-self">
+                                                <h3>Laura gill</h3>
+                                                <p class="indentity">Seattle, Washington</p>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <q>Lorem ipsum dolor sit amet init et consectetur adipisicing elit. Velit beatae laudantium
+                                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.</q>
+                                        </blockquote>
+                                        <ul class="rating-star mt-4">
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star-o"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <div class="testi-des">
+                                            <div class="test-img"><img src="../assets/images/team3.jpg" class="img-fluid" alt="/">
+                                            </div>
+                                            <div class="peopl align-self">
+                                                <h3>Smith Johnson</h3>
+                                                <p class="indentity">Seattle, Washington</p>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <q>Lorem ipsum dolor sit amet init et consectetur adipisicing elit. Velit beatae laudantium
+                                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.</q>
+                                        </blockquote>
+                                        <ul class="rating-star mt-4">
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star-o"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <div class="testi-des">
+                                            <div class="test-img"><img src="../assets/images/team1.jpg" class="img-fluid" alt="/">
+                                            </div>
+                                            <div class="peopl align-self">
+                                                <h3>Johnson smith</h3>
+                                                <p class="indentity">Seattle, Washington</p>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <q>Lorem ipsum dolor sit amet init et consectetur adipisicing elit. Velit beatae laudantium
+                                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.</q>
+                                        </blockquote>
+                                        <ul class="rating-star mt-4">
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star-o"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-content">
+                                    <div class="testimonial">
+                                        <div class="testi-des">
+                                            <div class="test-img"><img src="../assets/images/team2.jpg" class="img-fluid" alt="/">
+                                            </div>
+                                            <div class="peopl align-self">
+                                                <h3>Alexander leo</h3>
+                                                <p class="indentity">Seattle, Washington</p>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <q>Lorem ipsum dolor sit amet init et consectetur adipisicing elit. Velit beatae laudantium
+                                                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.</q>
+                                        </blockquote>
+                                        <ul class="rating-star mt-4">
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star-o"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /grids -->
+            </div>
+            <!-- //grids -->
+        </section>
+        <!--//testimonials-->
+
+        <!-- Request a demo -->
+
+        <div class="center-float">
+        <a class="btn btn-primary" style="border-radius: 20px;" href="">REQUEST A DEMO</a>
+        </div>
+
+        <!-- Request a demo  -->
+
+        <!-- contacts-5-grid -->
+        <div class="w3l-contact-10 py-5" id="contact">
+            <div class="form-41-mian pt-lg-4 pt-md-3 pb-lg-4">
+                <div class="container">
+                    <div class="heading text-center mx-auto">
+                        <h5 class="title-small text-center">Our Clients</h5>
+                        <h3 class="title-big mb-5">Our LinkedIn automation tool works best for:  </h3>
+                    </div>
+
+                    <div class="contacts-5-grid-main section-gap">
+                        <div class="contacts-5-grid">
+                            <div class="map-content-5">
+                                <div class="d-grid grid-col-2">
+                                    <div class="contact-type">
+                                        <div class="address-grid">
+                                            <h6><span class="fa fa-map-marker"></span></h6>
+                                            <p>Business Owners</p>
+                                            
+                                        </div>
+                                        <div class="address-grid">
+                                            <h6><span class="fa fa-envelope"></span></h6>
+                                            <p>Marketing Agencies</p>
+                                                
+                                        </div>
+                                        <div class="address-grid">
+                                            <h6><span class="fa fa-phone"></span></h6>
+                                            <p>Recruiters </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //contacts-5-grid -->
+        </div>
+
+        <!-- FAQ Page -->
+
+        <div class="container py-4">
+        <h3 class="title-big mb-lg-5 mb-4 text-center">Frequently Asked Questions</h3>
+        <div class="row">
+            <div class="col-md-6">
+            <label class="label-back text-white" data-toggle="collapse" data-target="#demo">Is tracking possible when emplyoees are offline too? <span>▼</span></label>
+            <div id="demo" class="collapse border">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <label class="label-back text-white" data-toggle="collapse" data-target="#demo1">Is tracking possible when emplyoees are offline too? <span>▼</span></label>
+            <div id="demo1" class="collapse border">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <label class="label-back text-white" data-toggle="collapse" data-target="#demo2">Is tracking possible when emplyoees are offline too? <span>▼</span></label>
+            <div id="demo2" class="collapse border">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <label class="label-back text-white" data-toggle="collapse" data-target="#demo3">Is tracking possible when emplyoees are offline too? <span>▼</span></label>
+            <div id="demo3" class="collapse border">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            </div>
+            <div class="col-md-6">
+            <label class="label-back text-white" data-toggle="collapse" data-target="#demo4">Is tracking possible when emplyoees are offline too? <span>▼</span></label>
+            <div id="demo4" class="collapse border">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <label class="label-back text-white" data-toggle="collapse" data-target="#demo5">Is tracking possible when emplyoees are offline too? <span>▼</span></label>
+            <div id="demo5" class="collapse border">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <label class="label-back text-white" data-toggle="collapse" data-target="#demo6">Is tracking possible when emplyoees are offline too? <span>▼</span></label>
+            <div id="demo6" class="collapse border">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <label class="label-back text-white" data-toggle="collapse" data-target="#demo7">Is tracking possible when emplyoees are offline too? <span>▼</span></label>
+            <div id="demo7" class="collapse border">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- FAQ Page -->
+
+        <div class="demo11">
+            <div class="container">
+                <h3 class="text-center text-white font-weight-bold mb-4">Pricing</h3>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="pricingTable11">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-adjust"></i>
+                                <div class="price-value"> $10.00 <span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Standard</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Personal CRM with stats </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b>Auto invite (personalized) </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Ability to connect with premium LinkedIn users only </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Send automated messages in bulk </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto view profiles </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto endorse skills </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Export / import data </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Build funnels </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Bypass weekly invite limit </li>
+                                </ul>
+                            </div>
+                            <div class="pricingTable-signup">
+                                <a href="#">Free Trial</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-md-3 col-sm-6">
+                        <div class="pricingTable11 green">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-briefcase"></i>
+                                <div class="price-value"> $20.00 <span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Business</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Personal CRM with stats </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b>Auto invite (personalized) </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Ability to connect with premium LinkedIn users only </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Send automated messages in bulk </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto view profiles </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto endorse skills </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Export / import data </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Build funnels </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Bypass weekly invite limit </li>
+                                </ul>
+                            </div>
+                            <div class="pricingTable-signup">
+                                <a href="#">Free Trial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="pricingTable11 blue">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-diamond"></i>
+                                <div class="price-value"> $30.00 <span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Premium</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Personal CRM with stats </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b>Auto invite (personalized) </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Ability to connect with premium LinkedIn users only </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Send automated messages in bulk </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto view profiles </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto endorse skills </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Export / import data </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Build funnels </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Bypass weekly invite limit </li>
+                                </ul>
+                            </div>
+                            <div class="pricingTable-signup">
+                                <a href="#">Free Trial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="pricingTable11 red">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-cube"></i>
+                                <div class="price-value"> $40.00 <span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Extra</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Personal CRM with stats </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b>Auto invite (personalized) </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Ability to connect with premium LinkedIn users only </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Send automated messages in bulk </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto view profiles </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto endorse skills </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Export / import data </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Build funnels </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Bypass weekly invite limit </li>
+                                </ul>
+                            </div>
+                            <div class="pricingTable-signup">
+                                <a href="#">Free Trial</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Pricing page -->
+
+        <!-- Contact us -->
+        <!-- contacts-5-grid -->
+        <div class="w3l-contact-10 py-5" id="contact">
+            <div class="form-41-mian pt-lg-4 pt-md-3 pb-lg-4">
+                <div class="container">
+                    <div class="heading text-center mx-auto">
+                        <h5 class="title-small text-center">Contact our team</h5>
+                        <h3 class="title-big mb-5">Got any Questions? </h3>
+                    </div>
+
+                    <div class="form-inner-cont mt-5">
+                        <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+                            <div class="form-grids">
+                                <div class="form-input">
+                                    <input type="text" name="w3lName" id="w3lName" placeholder="Enter your name *"
+                                        required="" />
+                                </div>
+                                <div class="form-input">
+                                    <input type="text" name="w3lSubject" id="w3lSubject" placeholder="Enter subject "
+                                        required />
+                                </div>
+                                <div class="form-input">
+                                    <input type="email" name="w3lSender" id="w3lSender" placeholder="Enter your email *"
+                                        required />
+                                </div>
+                                <div class="form-input">
+                                    <input type="text" name="w3lPhone" id="w3lPhone" placeholder="Enter your Phone Number *"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="form-input">
+                                <textarea name="w3lMessage" id="w3lMessage" placeholder="Type your query here"
+                                    required=""></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-style btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- //contacts-5-grid -->
+        </div>
+        <!-- Contact us -->
     </div>
+    
 </template>
 
 <script>

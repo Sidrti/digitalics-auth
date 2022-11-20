@@ -22,7 +22,7 @@
                               <small>Sign in with</small>
                           </div>
                           <div class="btn-wrapper text-center">
-                            <SocialLogin @onSuccess="onSuccess" @onFailure="onFailure"/>
+                            <!-- <SocialLogin @onSuccess="onSuccess" @onFailure="onFailure"/> -->
                           </div>
                       </template>
                       <template>
@@ -67,12 +67,12 @@
 </template>
 
 <script>
-import {getLogin,getGoogleLogin} from '../service/authService'
-import SocialLogin from '@/components/SocialLogin'
+// import {getLogin,getGoogleLogin} from '../service/authService'
+// import SocialLogin from '@/components/SocialLogin'
 export default {
   name: 'login',
   components: {
-    SocialLogin
+    // SocialLogin
   },
   mounted() {
    

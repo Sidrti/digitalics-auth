@@ -5,6 +5,7 @@
     <router-view name="footer"></router-view>
   </div>
 </template>
+
 <script>
 export default {
   name: 'vue_signup'
