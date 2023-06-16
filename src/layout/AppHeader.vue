@@ -1,20 +1,9 @@
 <template>
     <header class="header-global">
         <base-nav class="navbar-main" transparent type="" effect="light" expand>
-            <router-link slot="brand" class="navbar-brand mr-lg-5" to="/">
-                <img src="img/brand/Logo.png" alt="logo">
+            <router-link slot="brand" class="navbar-brand" to="/">
+                <img src="img/brand/Logo.png" alt="logo" style="height: 60px;">
             </router-link>
-
-            <div class="row" slot="content-header" slot-scope="{closeMenu}">
-                <div class="col-6 collapse-brand">
-                    <a href="#">
-                        <img src="img/brand/Logo-Blu.png">
-                    </a>
-                </div>
-                <div class="col-6 collapse-close">
-                    <close-button @click="closeMenu"></close-button>
-                </div>
-            </div>
 
             <!-- <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
@@ -58,24 +47,38 @@
                     <router-link to="/register" class="dropdown-item">Register</router-link>
                 </base-dropdown>
             </ul> -->
-            <ul v-if="!user" class="navbar-nav align-items-lg-center ml-lg-auto">
-                <li class="nav-item d-none d-lg-block ml-lg-4">
+            <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                <li class="nav-item d-none d-lg-block">
+                    <b-card-footer style="background-color: #9ee7ff4a;">
+                        Subscription: <strong>Basic </strong>
+                        <router-link to="/subscription" class="btn btn-primary">
+                            <span class="nav-link-inner--text">Upgrade</span>
+                        </router-link>
+                    </b-card-footer>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a to="#" class="btn btn-success btn-icon">
+                        <span class="btn-inner--icon">
+                            <i class="fa fa-cloud-download mr-1" style="color: white;"></i>
+                        </span>
+                        <span class="nav-link-inner--text text-white">Download Extension</span>
+                    </a>
+                </li>
+                <li v-if="!user" class="nav-item d-none d-lg-block">
                     <router-link to="/login" class="btn btn-neutral btn-icon">
                         <span class="btn-inner--icon">
-                            <i class="fa fa-cloud-download mr-2"></i>
+                            <i class="fa fa-sign-in mr-1"></i>
                         </span>
                         <span class="nav-link-inner--text">Login</span>
                     </router-link>
                 </li>
-            </ul>
-            <ul v-else class="navbar-nav align-items-lg-center ml-lg-auto">
-                <li class="nav-item d-none d-lg-block ml-lg-4">
-                    <router-link to="/home" class="btn btn-neutral btn-icon">
+                <li v-if="user" class="nav-item d-none d-lg-block">
+                    <a href="/login" @click="logout" class="btn btn-neutral btn-icon">
                         <span class="btn-inner--icon">
-                            <i class="fa fa-cloud-download mr-2"></i>
+                            <i class="fa fa-sign-out mr-1"></i>
                         </span>
-                        <span class="nav-link-inner--text">Home</span>
-                    </router-link>
+                        <span class="nav-link-inner--text">Logout</span>
+                    </a>
                 </li>
             </ul>
         </base-nav>
@@ -85,6 +88,7 @@
 import BaseNav from "@/components/BaseNav";
 import BaseDropdown from "@/components/BaseDropdown";
 import CloseButton from "@/components/CloseButton";
+import { removeItem } from '@/config/utils'
 
 export default {
     components: {
@@ -95,6 +99,12 @@ export default {
     computed: {
         user() {
             return localStorage.getItem('user');
+        },
+    },
+    methods:{
+        logout () {
+            removeItem('user')
+            router.push('/login')
         }
     }
 };

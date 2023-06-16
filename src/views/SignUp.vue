@@ -1,6 +1,6 @@
 <template>
-    <section class="section section-shaped section-lg my-0">
-        <div class="shape shape-style-1 bg-gradient-default">
+    <section class="section section-shaped section-lg my-0" style="background-image:url('img/Banner.png'); background-size: cover;">
+        <!-- <div class="shape shape-style-1 bg-gradient-default">
             <span></span>
             <span></span>
             <span></span>
@@ -9,11 +9,11 @@
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </div> -->
         <div class="container pt-lg-md">
             <div class="row justify-content-center">
                 <div class="col-lg-5">
-                    <card type="secondary" shadow
+                    <card shadow
                             header-classes="bg-white pb-5"
                             body-classes="px-lg-5 py-lg-5"
                             class="border-0">
@@ -48,7 +48,7 @@
                                             addon-left-icon="ni ni-lock-circle-open"
                                             v-model="form.password">
                                 </base-input>
-                                <div class="text-muted font-italic">
+                                <!-- <div class="text-muted font-italic">
                                     <small>password strength:
                                         <span class="text-success font-weight-700">strong</span>
                                     </small>
@@ -57,13 +57,25 @@
                                     <span>I agree with the
                                         <a href="#">Privacy Policy</a>
                                     </span>
-                                </base-checkbox>
+                                </base-checkbox> -->
                                 <div class="text-center">
                                     <base-button type="primary" class="my-4" @click="onSubmit">Create account</base-button>
                                 </div>
                             </form>
                         </template>
                     </card>
+                    <div class="row mt-3">
+                      <div class="col-6">
+                          <!-- <a href="#" class="text-light">
+                              <small>Forgot password?</small>
+                          </a> -->
+                      </div>
+                      <div class="col-6 text-right">
+                          <a href="/login" class="text-white">
+                              <small>Go To Login</small>
+                          </a>
+                      </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -101,12 +113,19 @@ export default {
     registerApi(data) {
         getRegister(data).then(res => {
             if (res.status === 200) {
-                console.log("success", res);
-                alert("Register success");
+                this.$bvToast.toast('Registration successful', {
+                    title: "Welcome To Digitalics",
+                    variant: "success",
+                    solid: true
+                })
                 this.$router.push('/login');
             }
             else {
-                alert("Register Failed");
+                this.$bvToast.toast('Something went wrong', {
+              title: "Registraton Failed",
+              variant: "Danger",
+              solid: true
+          })
                 console.log("errors", res);
             }
         });

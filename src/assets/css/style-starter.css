@@ -4146,7 +4146,7 @@ button.close {
 a.close.disabled {
   pointer-events: none; }
 
-.toast {
+/* .toast {
   max-width: 350px;
   overflow: hidden;
   font-size: 0.875rem;
@@ -4178,7 +4178,7 @@ a.close.disabled {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
 
 .toast-body {
-  padding: 0.75rem; }
+  padding: 0.75rem; } */
 
 .modal-open {
   overflow: hidden; }
@@ -9920,7 +9920,7 @@ header {
   background-color: var(--bg-color);
   padding: 0px;
   transition: all 0.4s ease 0s;
-  height: 90px;
+  /* height: 90px; */
   display: grid;
   align-items: center;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05); }

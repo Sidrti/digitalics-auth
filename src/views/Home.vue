@@ -1,6 +1,6 @@
 <template>
-  <section class="section-hero section-shaped my-0">
-      <div class="shape shape-style-1 shape-primary">
+  <section class="section-hero section-shaped my-0" style="background-image:url('img/Banner2.png'); background-size: cover;">
+      <!-- <div class="shape shape-style-1 shape-primary">
           <span class="span-150"></span>
           <span class="span-50"></span>
           <span class="span-50"></span>
@@ -11,23 +11,17 @@
           <span class="span-100"></span>
           <span class="span-50"></span>
           <span class="span-100"></span>
-      </div>
+      </div> -->
       <div class="container shape-container d-flex align-items-center">
           <div class="col px-0">
               <div class="row justify-content-center align-items-center">
                   <div class="col-lg-7 text-center pt-lg">
-                    <h2 class="text-white font-bold">WELCOME {{this.$store.state.loginUser.data.user.name}} !</h2>
-                      <!-- <img src="img/brand/white.png" style="width: 200px;" class="img-fluid"> -->
-                      <p class="lead text-white mt-4 mb-5">You are all set !</p>
-                      <div class="btn-wrapper">
-                          <base-button tag="a"
-                                       href="https://demos.creative-tim.com/vue-argon-design-system/documentation"
-                                       class="mb-3 mb-sm-0"
-                                       type="info"
-                                       icon="fa fa-code">
-                              Go to extension
-                          </base-button>
-                      </div>
+                    <h2 class="text-white text-uppercase">👋 WELCOME !</h2>
+                      <p class="text-white my-2">Happy to have you on Digitalics {{this.$store.state.loginUser.data.user.name}}</p>
+                      <p class="text-white my-2">You are successfully LoggedIn</p>
+                    <router-link to="#" class="btn btn-success btn-icon mt-5">
+                        <span class="nav-link-inner--text">Got TO Extension</span>
+                    </router-link>
                   </div>
               </div>
              

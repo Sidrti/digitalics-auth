@@ -7,7 +7,7 @@ import AppHeader from "../layout/AppHeader";
 import AppFooter from "../layout/AppFooter";
 import PageNotFound from '@/components/PageNotFound'
 import Landing from '@/views/Landing'
-import test from '@/views/test'
+import Subscription from '@/views/Subscription'
 
 Vue.use(Router)
 
@@ -18,15 +18,6 @@ let baseRoutes = [
     components: {
       header: AppHeader,
       default: Landing,
-      footer: AppFooter
-    }
-  },
-  {
-    path: '/test',
-    name: '',
-    components: {
-      header: AppHeader,
-      default: test,
       footer: AppFooter
     }
   },
@@ -54,6 +45,15 @@ let baseRoutes = [
     components: {
       header: AppHeader,
       default: SignUp,
+      footer: AppFooter
+    }
+  },
+  {
+    path: '/subscription',
+    name: 'Subscription',
+    components: {
+      header: AppHeader,
+      default: Subscription,
       footer: AppFooter
     }
   },
