@@ -4,6 +4,11 @@ import router from './router/router'
 import store from './store/store'
 import Argon from "./plugins/argon-kit";
 import './registerServiceWorker'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+Vue.use(BootstrapVue)
 
 import GoogleAuth from '@/config/google_oAuth.js'
 const gauthOption = {

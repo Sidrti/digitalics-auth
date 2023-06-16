@@ -1,6 +1,6 @@
 <template>
-  <section class="section section-shaped section-lg my-0">
-      <div class="shape shape-style-1 bg-gradient-default">
+  <section class="section section-shaped section-lg my-0" style="background-image:url('img/Banner.png'); background-size: cover;">
+      <!-- <div class="shape shape-style-1 bg-gradient-default">
           <span></span>
           <span></span>
           <span></span>
@@ -9,11 +9,11 @@
           <span></span>
           <span></span>
           <span></span>
-      </div>
+      </div> -->
       <div class="container pt-lg-md">
           <div class="row justify-content-center">
               <div class="col-lg-5">
-                  <card type="secondary" shadow
+                  <card shadow
                         header-classes="bg-white pb-5"
                         body-classes="px-lg-5 py-lg-5"
                         class="border-0">
@@ -22,7 +22,7 @@
                               <small>Sign in with</small>
                           </div>
                           <div class="btn-wrapper text-center">
-                            <!-- <SocialLogin @onSuccess="onSuccess" @onFailure="onFailure"/> -->
+                            <SocialLogin @onSuccess="onSuccess" @onFailure="onFailure"/>
                           </div>
                       </template>
                       <template>
@@ -55,7 +55,7 @@
                           </a> -->
                       </div>
                       <div class="col-6 text-right">
-                          <a href="/signup" class="text-light">
+                          <a href="/signup" class="text-white">
                               <small>Create new account</small>
                           </a>
                       </div>
@@ -67,12 +67,12 @@
 </template>
 
 <script>
-// import {getLogin,getGoogleLogin} from '../service/authService'
-// import SocialLogin from '@/components/SocialLogin'
+import {getLogin,getGoogleLogin} from '../service/authService'
+import SocialLogin from '@/components/SocialLogin'
 export default {
   name: 'login',
   components: {
-    // SocialLogin
+    SocialLogin
   },
   mounted() {
    
@@ -84,20 +84,26 @@ export default {
   },
   methods: {
     onSuccess(user) {
-      console.log(user.getBasicProfile().getName());
+      // console.log(user.getBasicProfile().getName());
 
       const data = { email:user.getBasicProfile().getEmail() };
       getGoogleLogin(data).then(res => {
-        console.log("errors",res);
         if(res.status === 200) {
-          console.log("success",res);
-          alert("Login success");
+          this.$bvToast.toast('Successful login', {
+              title: "Welcome",
+              variant: "success",
+              solid: true
+          })
           this.$store.commit('setLoginUser', res)
           window.location.href = '/home'
         }
         else {
-          alert("Login Failed");
-          console.log("errors",res);
+          this.$bvToast.toast('Something went wrong', {
+              title: "Login Failed",
+              variant: "danger",
+              solid: true
+          })
+          // console.log("errors",res);
         }
         
       });
@@ -109,16 +115,24 @@ export default {
       // evt.preventDefault();
       const data = { email:this.form.email, password:this.form.password };
       getLogin(data).then(res => {
-        console.log("errors",res);
+        // console.log("errors",res);
         if(res.status === 200) {
-          console.log("success",res);
-          alert("Login success");
+          // console.log("success",res);
+          this.$bvToast.toast('Successful login', {
+              title: "Welcome",
+              variant: "success",
+              solid: true
+          })
           this.$store.commit('setLoginUser', res)
           window.location.href = '/home'
         }
         else {
-          alert("Login Failed");
-          console.log("errors",res);
+          this.$bvToast.toast('Something went wrong', {
+              title: "Login Failed",
+              variant: "danger",
+              solid: true
+          })
+          // console.log("errors",res);
         }
         
       });
