@@ -14,6 +14,10 @@ export default new Vuex.Store({
     setLoginUser(state, user) {
       state.loginUser = user
       setStore('user', user)
+    },
+    updateUserData(state, user) {
+      state.loginUser.data.user = user
+      setStore('user', state.loginUser)
     }
   },
   actions: {
@@ -21,7 +25,24 @@ export default new Vuex.Store({
   },
   getters: {
     getLoginUserInfo(state) {
-      return state.loginUser
+      try {
+        return state.loginUser
+      }
+      catch {
+        return null;
+      }
+    },
+    isUserLogined(state) {
+      try {
+        if(state.loginUser.token != null && state.loginUser.token != ''&& typeof(state.loginUser.token) != undefined ) {
+          return true
+        }
+        return false
+      }
+      catch {
+        return false;
+      }
+     
     }
   }
 })

@@ -7,7 +7,15 @@
 </template>
 
 <script>
+import { getUserDetails } from './service/authService';
 export default {
-  name: 'vue_signup'
+  name: 'vue_signup',
+  mounted() {
+    if (this.$store.getters.isUserLogined) { 
+      getUserDetails().then(res => {
+          this.$store.commit('updateUserData', res)
+      });
+    }
+  }
 }
 </script>

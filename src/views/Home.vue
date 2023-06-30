@@ -1,17 +1,6 @@
 <template>
-  <section class="section-hero section-shaped my-0" style="background-image:url('img/Banner2.png'); background-size: cover;">
-      <!-- <div class="shape shape-style-1 shape-primary">
-          <span class="span-150"></span>
-          <span class="span-50"></span>
-          <span class="span-50"></span>
-          <span class="span-75"></span>
-          <span class="span-100"></span>
-          <span class="span-75"></span>
-          <span class="span-50"></span>
-          <span class="span-100"></span>
-          <span class="span-50"></span>
-          <span class="span-100"></span>
-      </div> -->
+  <div>
+    <section class="section-hero section-shaped my-0" style="background-image:url('img/Banner2.png'); background-size: cover;">
       <div class="container shape-container d-flex align-items-center">
           <div class="col px-0">
               <div class="row justify-content-center align-items-center">
@@ -28,15 +17,19 @@
           </div>
       </div>
   </section>
+  <Subscription></Subscription>
+  </div>
 </template>
 
 <script>
 import HomeMenu from '@/components/Menu'
+import Subscription from './Subscription.vue';
 
 export default {
   name: 'home',
   components: {
-    HomeMenu
-  }
+    HomeMenu,
+    Subscription
+}
 }
 </script>
