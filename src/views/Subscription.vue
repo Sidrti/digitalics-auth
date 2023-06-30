@@ -10,29 +10,22 @@
                     <div class="pricingTable11">
                         <div class="pricingTable-header">
                             <i class="fa fa-adjust"></i>
-                            <div class="price-value"> $10.00 <span class="month">per month</span> </div>
+                            <div class="price-value"> €69.00 <span class="month">per month</span> </div>
                         </div>
                         <h3 class="heading">Start</h3>
                         <div class="pricing-content">
                             <ul>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Personal CRM with
-                                    stats </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b>Auto invite
-                                    (personalized) </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Ability to
-                                    connect with premium LinkedIn users only </li>
+                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Introductory call </li>
+                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b>Import data </li>
                                 <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Send automated
+                                    bulk invites </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Send automated
+                                    personalised bulk invites </li>
+                                <li><b><i class="fa fa-close text-danger" aria-hidden="true"></i></b> Send automated
                                     messages in bulk </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto view
+                                <li><b><i class="fa fa-close text-danger" aria-hidden="true"></i></b> Auto view
                                     profiles </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto endorse
-                                    skills </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Export / import
-                                    data </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Build funnels
-                                </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Bypass weekly
-                                    invite limit </li>
+                                <li><b><i class="fa fa-close text-danger" aria-hidden="true"></i></b> Create campaign </li>
                             </ul>
                         </div>
                         <div class="pricingTable-signup">
@@ -45,29 +38,22 @@
                     <div class="pricingTable11 green">
                         <div class="pricingTable-header">
                             <i class="fa fa-briefcase"></i>
-                            <div class="price-value"> $20.00 <span class="month">per month</span> </div>
+                            <div class="price-value"> €99.00 <span class="month">per month</span> </div>
                         </div>
                         <h3 class="heading">Business</h3>
                         <div class="pricing-content">
                             <ul>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Personal CRM with
-                                    stats </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b>Auto invite
-                                    (personalized) </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Ability to
-                                    connect with premium LinkedIn users only </li>
+                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Introductory call </li>
+                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b>Import data </li>
+                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Send automated
+                                    bulk invites </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Send automated
+                                    personalised bulk invites </li>
                                 <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Send automated
                                     messages in bulk </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto view
+                                <li><b><i class="fa fa-close text-danger" aria-hidden="true"></i></b> Auto view
                                     profiles </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto endorse
-                                    skills </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Export / import
-                                    data </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Build funnels
-                                </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Bypass weekly
-                                    invite limit </li>
+                                <li><b><i class="fa fa-close text-danger" aria-hidden="true"></i></b> Create campaign </li>
                             </ul>
                         </div>
                         <div class="pricingTable-signup">
@@ -79,29 +65,22 @@
                     <div class="pricingTable11 blue">
                         <div class="pricingTable-header">
                             <i class="fa fa-diamond"></i>
-                            <div class="price-value"> $30.00 <span class="month">per month</span> </div>
+                            <div class="price-value"> €490.00 <span class="month">per month</span> </div>
                         </div>
-                        <h3 class="heading">Premium</h3>
+                        <h3 class="heading">Business Plus</h3>
                         <div class="pricing-content">
                             <ul>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Personal CRM with
-                                    stats </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b>Auto invite
-                                    (personalized) </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Ability to
-                                    connect with premium LinkedIn users only </li>
+                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Introductory call </li>
+                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b>Import data </li>
+                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Send automated
+                                    bulk invites </li>
+                                    <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Send automated
+                                    personalised bulk invites </li>
                                 <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Send automated
                                     messages in bulk </li>
                                 <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto view
                                     profiles </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Auto endorse
-                                    skills </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Export / import
-                                    data </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Build funnels
-                                </li>
-                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Bypass weekly
-                                    invite limit </li>
+                                <li><b><i class="fa fa-check text-success" aria-hidden="true"></i></b> Create campaign </li>
                             </ul>
                         </div>
                         <div class="pricingTable-signup">

@@ -8,6 +8,8 @@ import AppFooter from "../layout/AppFooter";
 import PageNotFound from '@/components/PageNotFound'
 import Landing from '@/views/Landing'
 import Subscription from '@/views/Subscription'
+import SuccessPage from '@/views/SuccessPage'
+import CancelPage from '@/views/CancelPage'
 
 Vue.use(Router)
 
@@ -28,6 +30,22 @@ let baseRoutes = [
       header: AppHeader,
       default: Home,
       footer: AppFooter
+    }
+  },
+  {
+    path: '/success',
+    name: 'Success',
+    components: {
+      header: AppHeader,
+      default: SuccessPage,
+    }
+  },
+  {
+    path: '/cancel',
+    name: 'Cancel',
+    components: {
+      header: AppHeader,
+      default: CancelPage,
     }
   },
   {
