@@ -650,9 +650,10 @@
 </template>
 
 <script>
-import Subscription from './Subscription.vue'
+import PricingCard from '../components/PricingCard.vue'
+import Subscription from '../views/Subscription.vue'
 export default {
-    components:{Subscription},
+    components:{ PricingCard, Subscription },
     data() {
         return {
             text: `

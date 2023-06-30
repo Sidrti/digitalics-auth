@@ -48,9 +48,9 @@
                 </base-dropdown>
             </ul> -->
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                <li class="nav-item d-none d-lg-block">
+                <li class="nav-item d-none d-lg-block" v-if="this.$store.getters.isUserLogined">
                     <b-card-footer style="background-color: #9ee7ff4a;">
-                        Subscription: <strong>Basic </strong>
+                        Subscription: <strong>{{ computeSubscription }} </strong>
                         <router-link to="/subscription" class="btn btn-primary">
                             <span class="nav-link-inner--text">Upgrade</span>
                         </router-link>
@@ -100,6 +100,31 @@ export default {
         user() {
             return localStorage.getItem('user');
         },
+        computeSubscription() {
+            if(this.$store.getters.isUserLogined) {
+                if( this.$store.getters.getLoginUserInfo.data.user.current_plan == 'start') {
+                return 'Start Plan'
+            }
+            if( this.$store.getters.getLoginUserInfo.data.user.current_plan == 'business') {
+                return 'Business Plan'
+            }
+            if( this.$store.getters.getLoginUserInfo.data.user.current_plan == 'business_plus') {
+                return 'Business Plus Plan'
+            }
+            if( this.$store.getters.getLoginUserInfo.data.user.current_plan == 'subscription_end') {
+                return 'Subscription Expired'
+            }
+            if( this.$store.getters.getLoginUserInfo.data.user.current_plan == 'trial_end') {
+                return 'Trial End'
+            }
+            else {
+                return 'None'
+            }
+            }
+            else {
+                return 'Free Trial'
+            }
+        }
     },
     methods:{
         logout () {
