@@ -6,7 +6,7 @@
                     <h3 class="text-primary font-weight-light mb-2">Thank you for supporting us!</h3>
                     <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
                 </div>
-                <div class="col-lg-6 text-lg-center btn-wrapper">
+                <!-- <div class="col-lg-6 text-lg-center btn-wrapper">
                     <a target="_blank" rel="noopener" href="https://twitter.com/"
                        class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" data-toggle="tooltip"
                        data-original-title="Follow us">
@@ -27,7 +27,7 @@
                        data-original-title="Star on Github">
                         <i class="fa fa-github"></i>
                     </a>
-                </div>
+                </div> -->
             </div>
             <hr>
             <div class="row align-items-center justify-content-md-between">
