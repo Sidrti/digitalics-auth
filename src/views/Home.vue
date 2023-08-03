@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="section-hero section-shaped my-0" style="background-image:url('img/Banner2.png'); background-size: cover;">
+    <section class="section-hero section-shaped my-2" style="background-image:url('img/Banner2.png'); background-size: cover;">
       <div class="container shape-container d-flex align-items-center">
           <div class="col px-0">
               <div class="row justify-content-center align-items-center">

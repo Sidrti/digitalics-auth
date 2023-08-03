@@ -4,7 +4,6 @@
             <router-link slot="brand" class="navbar-brand" to="/">
                 <img src="img/brand/Logo.png" alt="logo" style="height: 60px;">
             </router-link>
-
             <!-- <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
                     <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
@@ -49,7 +48,7 @@
             </ul> -->
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item d-none d-lg-block" v-if="this.$store.getters.isUserLogined">
-                    <b-card-footer style="background-color: #9ee7ff4a;">
+                    <b-card-footer style="background-color: #9ee7ff4a; padding:5px;">
                         Subscription: <strong>{{ computeSubscription }} </strong>
                         <router-link to="/subscription" class="btn btn-primary">
                             <span class="nav-link-inner--text">Upgrade</span>
@@ -80,7 +79,24 @@
                         <span class="nav-link-inner--text">Logout</span>
                     </a>
                 </li>
+                <li class="nav-item d-none d-lg-block">
+                    <b-button
+                        class="mx-1 text-white"
+                        variant="success"
+                        size="sm"
+                        v-b-modal.translate-modal
+                        >
+                        <i class="fa fa-globe mr-1"></i>Translate
+                        </b-button>
+                    <!-- <a href="#" v-b-modal.Translator class="btn btn-neutral btn-icon">
+                        <span class="btn-inner--icon">
+                            <i class="fa fa-sign-out mr-1"></i>
+                        </span>
+                        <span class="nav-link-inner--text">Logout</span>
+                    </a> -->
+                </li>
             </ul>
+            <Translator></Translator>
         </base-nav>
     </header>
 </template>
@@ -88,13 +104,15 @@
 import BaseNav from "@/components/BaseNav";
 import BaseDropdown from "@/components/BaseDropdown";
 import CloseButton from "@/components/CloseButton";
+import Translator from "../components/Translator.vue"; 
 import { removeItem } from '@/config/utils'
 
 export default {
     components: {
         BaseNav,
         CloseButton,
-        BaseDropdown
+        BaseDropdown,
+        Translator
     },
     computed: {
         user() {

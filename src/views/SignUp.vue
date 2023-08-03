@@ -122,11 +122,11 @@ export default {
             }
             else {
                 this.$bvToast.toast('Something went wrong', {
-              title: "Registraton Failed",
-              variant: "Danger",
-              solid: true
-          })
-                console.log("errors", res);
+                title: "Registraton Failed",
+                variant: "Danger",
+                solid: true
+            })
+                // console.log("errors", res);
             }
         });
     }

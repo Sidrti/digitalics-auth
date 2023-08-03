@@ -21,6 +21,7 @@
     "sass": "^1.55.0",
     "vue": "^2.6.10",
     "vue-flatpickr-component": "^8.1.1",
+    "vue-google-translate": "^0.0.13",
     "vue-lazyload": "^1.2.6",
     "vue-router": "^3.0.3",
     "vue-stripe-checkout": "^3.5.15",
