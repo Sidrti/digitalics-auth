@@ -14,7 +14,6 @@ export default {
   name: 'signup_header',
   methods: {
     logout () {
-      alert("hi logout")
       removeItem('user')
       router.push('/login')
     }
